@@ -9531,7 +9531,7 @@ let
 
   rpcbind = callPackage ../servers/rpcbind { };
 
-  #monetdb = callPackage ../servers/sql/monetdb { };
+  monetdb = callPackage ../servers/sql/monetdb { };
 
   mariadb = callPackage ../servers/sql/mariadb {
     inherit (darwin) cctools;
